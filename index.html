@@ -12,7 +12,7 @@
     min-height: 100vh;
     padding: 40px;
     margin-bottom: 20px;
-    background-color: #1a1a2e;
+    background-color: ##3d3d66;
     border: 1px solid #333;
     border-radius: 10px;
     color: #e0e0e0;
@@ -30,6 +30,26 @@
     text-align: center;
 }
     .fila-tarjetas { display: flex; }
+    .iconos-tecnologias {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 2rem;
+        }
+    .fila-proyectos {
+    display: flex;
+    gap: 20px;
+}
+
+.tarjeta-proyecto {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    flex: 1;
+}
+    .tarjeta-proyecto:hover {
+   background-color: #4a4a7e;
+        }
 </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -59,28 +79,42 @@ Mi trayectoria comenzó en el periodismo digital y la edición de contenidos en 
 </section>
 <section id="proyectos">
 <h2>Proyectos</h2>
-<h3>Análisis de datos de viajes en determinadas condiciones climáticas (Proyecto de Bootcamp, TripleTen)</h3>
+    <div class="fila-proyectos">
+<div class="tarjeta-proyecto">
+    <h3>Análisis de datos de viajes en determinadas condiciones climáticas (Proyecto de Bootcamp, TripleTen)</h3>
 <p>Realicé una evaluación estadística y de correlación para medir el impacto de las condiciones meteorológicas y la ubicación geográfica en la duración y frecuencia de los viajes en taxi. 
 Realicé una prueba de hipótesis independientes, demostrando que la lluvia incrementa significativamente la duración promedio del viaje. 
 Tecnologías utilizadas: Python, Pandas, SciPy, Matplotlib, Jupyter Notebook</p>
+    <div class="iconos-tecnologias">
+<i class="fa-solid fa-taxi"></i> 
+<i class="fa-solid fa-chart-bar"></i>
+</div>
 <a href="https://github.com/durandiego099-droid/Tarifas_taxis.git">Ver repositorio</a>
-<h3>Análisis del mercado de videojuegos (Proyecto de Bootcamp, TripleTen)</h3>
+    </div>
+<div class="tarjeta-proyecto">
+    <h3>Análisis del mercado de videojuegos (Proyecto de Bootcamp, TripleTen)</h3>
 <p>Desarrollé un análisis cuantitativo para identificar factores de éxito comercial, ciclo de vida de consolas y tendencias regionales.
 Con estos dato, generé hallazgos y visualizaciones para orientar la toma de decisiones estratégicas en la industria de cara a las tendencias que han surgido. 
 Tecnologías: Python, Pandas, Matplotlib, Seaborn, SciPy, Jupyter Notebook </p>
 <a href="https://github.com/durandiego099-droid/Modulo_parte1.git">Ver repositorio</a>
-<h3>Análisis de rendimiento de planes de suscripción (Proyecto de Bootcamp, TripleTen)</h3>
+    </div>
+<div class="tarjeta-proyecto">
+    <h3>Análisis de rendimiento de planes de suscripción (Proyecto de Bootcamp, TripleTen)</h3>
 <p>Realicé un análisis estadístico y de comportamiento de usuarios para evaluar la rentabilidad financiera y 
 los patrones de consumo entre los planes Surf y Ultimate de Megaline.  Demostré estadísticamente que el plan Ultimate genera mayores ingresos promedio. 
 Además identifiqué una oportunidad de negocio en el plan Surf, donde el 35.9% de los usuarios excede sus 
 límites de minutos. 
 Tecnologías: Python, SciPy, Matplotlib, Numpy</p>
 <a href="https://github.com/durandiego099-droid/Analisis_estadistico_tarifas.git">Ver repositorio</a>
-<h3>Análisis de hábitos de consumo e identificación de problemas en las órdenes de una tienda en línea (Proyecto de Bootcamp, TripleTen)</h3>
+    </div>
+<div class="tarjeta-proyecto">
+    <h3>Análisis de hábitos de consumo e identificación de problemas en las órdenes de una tienda en línea (Proyecto de Bootcamp, TripleTen)</h3>
 <p>Evalué el comportamiento de compra de los clientes en una plataforma de entrega de comestibles a partir de un conjunto de datos masivo con anomalías, duplicados y valores ausentes.
 Identifiqué patrones de repetición de compra (las bebidas superan el 70% de retención), detecté picos de pedidos a los 7 días y a las 10:00-15:00 horas, y corregí fallas de registro en un universo de 149,626 usuarios únicos.
 Tecnologías: Python, SciPy, Matplotlib, Numpy</p>
 <a href="https://github.com/durandiego099-droid/Analisis-habitos-consumo-pedidos.git">Ver repositorio</a>
+    </div>
+        </div>
 </section>
 <section id="contacto">
 <h2>Contacto</h2>
