@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Diego Durán científico de datos jr - Portafolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
    body {
         background-color: #020418;
@@ -87,7 +88,17 @@ border: 3px solid white;
     .tarjeta i {
     font-size: 2.7em;
 }
-
+@media (max-width: 600px) {
+  .fila-tarjetas {
+    flex-direction: column;
+  }
+  .iconos {
+    flex-direction: column;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+}
 </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
